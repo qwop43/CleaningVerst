@@ -25,5 +25,8 @@
     "gulp-useref": "^5.0.0",
     "run-sequence": "^2.2.1",
     "sass": "^1.86.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }

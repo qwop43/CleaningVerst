@@ -1,41 +1,66 @@
-body {
-  padding: 0;
-  margin: 5 43;
-}
-
-nav {
-  background-color: #e21010;
-}
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  display: inline-block;
-  padding: 0 10px 0 10px;
-}
-nav ul li a {
-  text-decoration: none;
-}
-
-.catalog {
+.main-header {
+  background-color: #3F5D97;
+  width: 1920px;
+  height: 50px;
+  color: white;
   display: flex;
-}
-.catalog .catalog-item {
-  align-self: center;
+  align-items: center;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin: 10px;
-  text-transform: uppercase;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
 }
 
-a {
+.business-hours {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  position: absolute;
+  left: 361px;
+}
+.business-hours .icon {
+  font-size: 20px;
+}
+
+.phone-number {
+  color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  left: 625px;
+}
+.phone-number .icon {
+  transform: rotate(90deg);
+  font-size: 20px;
 }
 
-.pal {
-  font-weight: bold;
-  font-size: 6px;
-  color: #e21010;
+.appointment-button {
+  background-color: #F69400;
+  color: white;
+  width: 301px;
+  height: 50px;
+  text-decoration: none;
+  position: absolute;
+  left: 1291px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
