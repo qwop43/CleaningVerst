@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 5 43;
+}
+
+nav {
+  background-color: #e21010;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.catalog {
+  display: flex;
+}
+.catalog .catalog-item {
+  align-self: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pal {
+  font-weight: bold;
+  font-size: 6px;
+  color: #e21010;
+}
