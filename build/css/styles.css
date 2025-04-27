@@ -537,3 +537,97 @@
   text-decoration: none;
   font-size: 25px;
 }
+
+.quote-section {
+  position: relative;
+  top: 1710px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.quote-section .quote-title {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #2F4672;
+}
+.quote-section .quote-steps {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.quote-section .step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.quote-section .step-item .step-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #E0E0E0;
+  transition: all 0.3s ease;
+}
+.quote-section .step-item .step-circle:hover {
+  border: 5px solid #F69400;
+}
+.quote-section .step-item .step-circle .step-number-wrapper {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F69400;
+}
+.quote-section .step-item .step-circle .step-number-wrapper .step-number {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+}
+.quote-section .step-item .step-description {
+  width: 220px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #333333;
+}
+.quote-section .line-with-arrow, .quote-section .line-with-arrow2 {
+  position: relative;
+  width: 190px;
+  height: 5px;
+  background-color: #E0E0E0;
+  margin: 50px auto;
+}
+.quote-section .line-with-arrow .arrow-icon, .quote-section .line-with-arrow2 .arrow-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #E0E0E0;
+}
+.quote-section .line-with-arrow {
+  left: -200px;
+  top: 240px;
+}
+.quote-section .line-with-arrow2 {
+  left: 200px;
+  top: 295px;
+}

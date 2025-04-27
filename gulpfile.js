@@ -48,6 +48,13 @@ function css(cb) {
     ;
 }
 
+gulp.task('sass', function() {
+    return gulp.src('src/scss/**/*.scss')
+      .pipe(sass().on('error', sass.logError)) 
+      .pipe(gulp.dest('build/css'))  
+      .pipe(browserSync.stream());  
+  });
+
 exports.default = function() {
     // You can use a single task
     gulp.watch('src/scss/**/*.scss', css);
