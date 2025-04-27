@@ -429,3 +429,111 @@
   left: 327.77px;
   border-radius: 10px;
 }
+
+.cleaning-services-section {
+  position: absolute;
+  width: 1920px;
+  height: 969.3px;
+  top: 2395px;
+  background-color: #f5f8fc;
+}
+.cleaning-services-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cleaning-services-section .section-header h1 {
+  position: absolute;
+  width: 512.78px;
+  height: 53px;
+  top: 112px;
+  left: 703.61px;
+  font-family: Rubik;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 45px;
+  color: #2F4672;
+}
+.cleaning-services-section .section-header p {
+  position: absolute;
+  width: 820.21px;
+  height: 24px;
+  top: 192px;
+  left: 556.9px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #828282;
+}
+.cleaning-services-section .cards-container {
+  position: relative;
+  width: 1400px;
+  top: 240px;
+  left: -100px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cleaning-services-section .cleaning-service-card {
+  width: 308px;
+  height: 523px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.cleaning-services-section .cleaning-service-card img {
+  width: 308.19px;
+  height: 223.32px;
+  top: 2689.51px;
+  left: 299.86px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.cleaning-services-section .cleaning-service-card h3 {
+  position: relative;
+  width: 230px;
+  text-align: left;
+  left: -15px;
+  font-family: "Cerebri Sans Pro";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #1d3557;
+}
+.cleaning-services-section .cleaning-service-card p {
+  width: 260.69px;
+  height: 120px;
+  text-align: left;
+  font-family: "Cerebri Sans Pro";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #6c757d;
+}
+.cleaning-services-section .read-more-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F69400;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 25px;
+}
