@@ -768,3 +768,91 @@
     color: #BDBDBD;
   }
 }
+
+
+
+
+.info-banner {
+  position: absolute;
+  top:4100px;
+  left: 327px;
+  display: flex;
+  width: 1266px;
+height: 588px;
+  overflow: hidden;
+
+  &__text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: Rubik;
+font-weight: 700;
+font-size: 45px;
+line-height: 100%;
+letter-spacing: 0%;
+    color: #2F4672;
+  }
+
+  &__description {
+    font-family: Rubik;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#828282;
+  }
+
+  &__contact {
+    font-family: Rubik;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
+    display: flex;
+    align-items: center;
+   gap:20px;
+    
+    color: #333333;
+    
+  }
+
+  &__phone {
+    width: 229.04718017578125px;
+height: 60px;
+border-radius: 30px;
+text-align: center;
+display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: #F69400;
+    
+
+    font-family: Rubik;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 623px;
+height: 588px;
+border-radius: 20px;
+    }
+  }
+}
