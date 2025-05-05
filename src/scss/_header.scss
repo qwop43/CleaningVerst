@@ -75,52 +75,9 @@
   }
 }
 
-@media (max-width: 1600px) {
-  .business-hours {
-    left: 300px;
-  }
-  
-  .phone-number {
-    left: 550px;
-  }
-  
-  .appointment-button {
-    left: 1150px;
-  }
-}
 
-@media (max-width: 1400px) {
-  .business-hours {
-    left: 250px;
-  }
-  
-  .phone-number {
-    left: 500px;
-  }
-  
-  .appointment-button {
-    left: 1000px;
-    width: 280px;
-  }
-}
 
-@media (max-width: 1200px) {
-  .business-hours {
-    left: 200px;
-    font-size: 18px;
-  }
 
-  .phone-number {
-    left: 400px;
-    font-size: 18px;
-  }
-
-  .appointment-button {
-    left: 800px;
-    width: 240px;
-    font-size: 18px;
-  }
-}
 
 @media (max-width: 1024px) {
   .business-hours {
@@ -136,7 +93,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 786px) {
   .business-hours,
   .phone-number {
     position: static;
