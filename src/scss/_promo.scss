@@ -1,83 +1,167 @@
-
 .promo-header {
-    position: relative;
-    width: 1920px;
-    height: 816.768px;
-    overflow: hidden;
-    text-align: center;
-    color: white;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 42.54%; /* 816/1920 = 0.4254 (зберігаємо пропорції) */
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.promo-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 760px;
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 5.625vw; /* 108/1920 = 0.05625 */
+  line-height: 1;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+}
+
+.promo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/photo/Clean.png');
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+.promo-subtitle {
+  width: 90%;
+  max-width: 426px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 1.5625vw; /* 30/1920 = 0.015625 */
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 1% 0;
+}
+
+.promo-button {
+  position: relative;
+  margin-top: 2%;
+  width: 90%;
+  max-width: 303px;
+  height: 7.34vh; /* ~60/816 */
+  background-color: #F69400;
+  color: white;
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 1.04vw; /* 20/1920 */
+  line-height: 1;
+  letter-spacing: 0;
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #e08500;
+}
+
+.promo-content {
+  width: 90%;
+  max-width: 760px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Адаптація для екранів менше 1600px */
+@media (max-width: 1600px) {
+  .promo-title {
+    font-size: 6vw;
+  }
+  .promo-subtitle {
+    font-size: 1.8vw;
+  }
+  .promo-button {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo-header {
+    padding-bottom: 50%;
   }
   
   .promo-title {
-    position: absolute;
-    top: -50px;
-    height: 130px;
-    width: 760px;
-    font-family: Rubik;
-    font-weight: 700;
-    font-size: 108px;
-    line-height: 100%;
-    letter-spacing: 0;
-    color: #ffffff;
-  }
-  
-  .promo-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1920px;
-    height: 816px;
-    background-image: url('/photo/Clean.png');
-    background-size: cover;
-    background-position: center;
-    transform: scaleX(-1);
-    z-index: -1;
+    font-size: 7vw;
+    top: -70px;
   }
   
   .promo-subtitle {
-    width: 426px;
-    height: 36px;
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0;
-    color: #ffffff;
+    font-size: 2.5vw;
   }
   
   .promo-button {
-    position: relative;
-    top: 20px;
-    width: 303px;
-    height: 60px;
-    background-color: #F69400;
-    color: white;
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 2vw;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-header {
+    padding-bottom: 60%;
   }
   
-  .promo-content {
-    width: 760px;
-    height: 252px;
-    border-radius: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .promo-title {
+    font-size: 8vw;
+    top: -60px;
   }
   
+  .promo-subtitle {
+    font-size: 3vw;
+  }
+  
+  .promo-button {
+    font-size: 2.5vw;
+    height: 5vh;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-header {
+    padding-bottom: 80%;
+  }
+  
+  .promo-title {
+    font-size: 10vw;
+    top: -60px;
+  }
+  
+  .promo-subtitle {
+    font-size: 4vw;
+  }
+  
+  .promo-button {
+    font-size: 3.5vw;
+    height: 40px;
+    max-width: 200px;
+    border-radius: 20px;
+  }
+}
