@@ -414,6 +414,7 @@
   border: 5px solid #F2F2F2;
   transition: all 0.3s ease;
 }
+
 .service-circle:hover {
   border: 5px solid #F69400;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
@@ -447,6 +448,77 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .services-grid {
+    gap: 40px;
+  }
+  .service-item {
+    width: 220px;
+  }
+  .service-circle {
+    width: 140px;
+    height: 140px;
+  }
+  .service-photo-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .service-name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  .services-grid {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .service-item {
+    width: calc(50% - 30px);
+    max-width: 220px;
+    margin-bottom: 30px;
+  }
+  .service-circle {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+  .service-photo-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+  .service-name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .services-section {
+    padding: 50px 15px;
+  }
+  .services-grid {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-item {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 25px;
+  }
+  .service-circle {
+    width: 140px;
+    height: 140px;
+  }
+  .service-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .service-name {
+    font-size: 16px;
+  }
+}
 .about-section {
   padding: 80px 0;
   background-color: #ffffff;
