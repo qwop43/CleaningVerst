@@ -133,6 +133,8 @@
 }
 
 .promo-title {
+  position: absolute;
+  top: -50px;
   height: 130px;
   width: 760px;
   font-family: Rubik;
@@ -853,6 +855,195 @@ letter-spacing: 0%;
       width: 623px;
 height: 588px;
 border-radius: 20px;
+    }
+  }
+}
+
+.contact-left {
+  position: absolute;
+  max-width: 970px;
+  width: 900px;
+height: 822px;
+top: 4852px;
+background-image: url('/photo/Contact.png');
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+
+  position: absolute;
+
+  &__content {
+    position: absolute;
+    width: 463.3487854003906px;
+height: 421.6937255859375px;
+top: 151.65px;
+left: 127px;
+
+justify-content: center; 
+align-items: center;     
+text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-family: Rubik;
+font-weight: 700;
+font-size: 45px;
+line-height: 100%;
+letter-spacing: 0%;
+display: flex;
+justify-content: flex-start;
+align-items: center;    
+text-align: left; 
+   color: white;
+  }
+
+  &__subtitle {
+    font-family: Rubik;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color: white;
+display: flex;
+justify-content: flex-start;
+align-items: center;   
+text-align: left; 
+  }
+
+  &__info {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    font-family: Rubik;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+display: flex;
+justify-content: flex-start;
+align-items: center;  
+text-align: left; 
+    gap: 10px;
+    color: white;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    background: #f69400;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+}
+
+.contact-right {
+  width: 1028px;
+height: 821px;
+top: 4852px;
+right: -25px;
+background-color: #F5F8FD;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 600px;
+    background-color: #F5F8FD;
+    clip-path: polygon(100% 0, 0 20%, 0 80%, 100% 100%);
+  }
+
+  &::after {
+    content: "Schedule an Appointment";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%) rotate(270deg);
+    width: 600px;
+    text-align: center;
+    font-family: Rubik;
+font-weight: 500;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0%;
+
+    color: #2F4672;
+    pointer-events: none;
+  }
+
+  &__form {
+    position: absolute;
+    display: flex;
+    bottom: 200px;
+    width:546px;
+    height: 400px;
+    right: 320px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+
+    input {
+      width: 258.8545227050781px;
+height: 60px;
+border-radius: 50px;
+
+      flex: 1;
+      padding-left: 20px;
+      border: none;
+      background: #fff;
+      font-size: 14px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  textarea {
+    width: 522.685302734375px;
+height: 208px;
+top: 5196.5px;
+left: 1046.31px;
+border-radius: 30px;
+padding-left: 20px;
+padding-top: 15px;
+    resize: none;
+   
+    border: none;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__button {
+    width: 200px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #f69400;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #e58500;
     }
   }
 }
