@@ -1,0 +1,55 @@
+.nav-header {
+    background-color: white;
+    width: 1920px;
+    height: 150px;
+    top: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    height: 118px;
+    width: 194px;
+    position: absolute;
+    left: 327px;
+    top: 66px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    padding: 0 20px;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    position: relative;
+    font-family: Rubik;
+    color: #3F5D97;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-decoration: none;
+  
+    &:hover {
+        font-weight: 700;
+        color: #F69400;
+    }
+  }
+  
+  .nav-links-container {
+    height: 24px;
+    position: absolute;
+    top: 108px;
+    left: 1007px;
+    width: 586px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
