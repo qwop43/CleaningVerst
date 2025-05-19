@@ -671,7 +671,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(246, 148, 0, 0.2);
 }
 
 .image-block img {
@@ -683,6 +682,125 @@
   border-radius: 10px;
 }
 
+@media (max-width: 1200px) {
+  .section-header h1 {
+    left: 430px;
+    top: 910px;
+    font-size: 30px;
+    width: 330px;
+  }
+  .text-block {
+    left: 430px;
+    top: 980px;
+    width: 310px;
+  }
+  .text-block p {
+    font-size: 15px;
+  }
+  .mission-block {
+    left: 175px;
+    top: 1170px;
+    width: 250px;
+    height: 200px;
+  }
+  .mission-header h2 {
+    left: 190px;
+    top: 1260px;
+    font-size: 22px;
+    width: 250px;
+  }
+  .divider {
+    left: 195px;
+    top: 1250px;
+  }
+  .feature-tag {
+    left: 175px;
+    top: 1200px;
+    font-size: 28px;
+    width: 260px;
+  }
+  .mission-content h3 {
+    left: 430px;
+    top: 1195px;
+    font-size: 15px;
+  }
+  .mission-content p {
+    left: 430px;
+    top: 1210px;
+    width: 330px;
+    font-size: 15px;
+  }
+  .read-more-link {
+    left: 430px;
+    top: 1295px;
+  }
+  .image-block img {
+    left: 5px;
+    top: 940px;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .section-header h1 {
+    left: 270px;
+    top: 1150px;
+    font-size: 22px;
+    width: 230px;
+  }
+  .text-block {
+    left: 271px;
+    top: 1200px;
+    width: 270px;
+  }
+  .text-block p {
+    font-size: 10px;
+  }
+  .mission-block {
+    left: 120px;
+    top: 1315px;
+    width: 150px;
+    height: 120px;
+  }
+  .mission-header h2 {
+    left: 130px;
+    top: 1365px;
+    font-size: 15px;
+    width: 170px;
+  }
+  .divider {
+    left: 130px;
+    top: 1360px;
+    height: 2px;
+  }
+  .feature-tag {
+    left: 115px;
+    top: 1330px;
+    font-size: 16px;
+    width: 260px;
+  }
+  .mission-content h3 {
+    left: 270px;
+    top: 1305px;
+    font-size: 15px;
+  }
+  .mission-content p {
+    left: 272px;
+    top: 1330px;
+    width: 275px;
+    font-size: 10px;
+  }
+  .read-more-link {
+    left: 275px;
+    top: 1375px;
+  }
+  .image-block img {
+    left: 5px;
+    top: 1170px;
+    width: 250px;
+    height: 250px;
+  }
+}
 .cleaning-services-section {
   position: absolute;
   width: 1920px;
@@ -1135,7 +1253,7 @@
 .main-footer {
   position: absolute;
   width: 1920px;
-  height: 478.9736328125px;
+  height: 320.9736328125px;
   top: 5673.03px;
   background-color: #3F5D97;
   color: white;
