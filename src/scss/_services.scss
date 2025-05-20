@@ -35,6 +35,21 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.services-scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+  min-width: max-content; // Щоб працювало на мобілках
+  justify-content: flex-start;
+
+  .service-item {
+    flex: 0 0 auto; // Щоб не стискалося при скролі
+  }
+}
 
 .service-circle:hover {
   border-color: #F69400;
@@ -72,81 +87,58 @@
   letter-spacing: 0;
   text-align: center;
 }
-
-/* --- Адаптивність --- */
-
-@media (max-width: 1024px) {
-  .services-grid {
-    gap: 40px;
-  }
-  .service-item {
-    width: 220px;
-  }
-  .service-circle {
-    width: 140px;
-    height: 140px;
-  }
-  .service-photo-wrapper {
-    width: 130px;
-    height: 130px;
-  }
-  .service-name {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-section {
-    padding: 60px 0;
-  }
-  .services-grid {
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  .service-item {
-    width: calc(50% - 30px);
-    max-width: 220px;
-    margin-bottom: 30px;
-  }
-  .service-circle {
-    width: 160px;
-    height: 160px;
-    margin-bottom: 20px;
-  }
-  .service-photo-wrapper {
-    width: 140px;
-    height: 140px;
-  }
-  .service-name {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .services-section {
-    position: relative;
-    top: -50px;
-    padding: 35px 15px;
-  }
-  .services-grid {
-    gap: 20px;
+@media screen and (max-width: 992px) {
+  .contact-section {
     flex-direction: column;
-    align-items: center;
-  }
-  .service-item {
-    width: 100%;
-    max-width: 220px;
-    margin-bottom: 25px;
-  }
-  .service-circle {
-    width: 140px;
-    height: 140px;
-  }
-  .service-photo-wrapper {
-    width: 120px;
-    height: 120px;
-  }
-  .service-name {
-    font-size: 16px;
+
+    .contact-image,
+    .contact-form {
+      flex: unset;
+      width: 100%;
+    }
+
+    .contact-image {
+      min-height: 300px;
+
+      .contact-info {
+        padding: 1.5rem;
+        margin-left: 0;
+        max-width: 100%;
+      }
+    }
+
+    .contact-form {
+      padding: 2rem 1.5rem;
+
+      .vertical-text {
+        position: static;
+        transform: none;
+        writing-mode: vertical-lr;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #243665;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      form {
+        .form-row {
+          flex-direction: column;
+
+          input {
+            width: 100%;
+          }
+        }
+
+        textarea {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
   }
 }

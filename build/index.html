@@ -10,27 +10,30 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <div class="business-hours">
-                <i class="fas fa-clock icon"></i>
-                <span>Mon-Fri: 9AM - 5PM</span>
-            </div>
-            <a class="phone-number">
-                <i class="fas fa-phone-alt icon"></i>
-                <span>(205) 484-9624</span>
-            </a>
-            <a href="#appointment" class="appointment-button">
-                <span class="appointment-button-text">Get appointment now</span>
-            </a>
+<header class="main-header">
+    <div class="header-container">
+        <div class="business-hours">
+            <i class="fas fa-clock icon"></i>
+            <span>Mon-Fri: 9AM - 5PM</span>
         </div>
-    </header>
+        <a class="phone-number">
+            <i class="fas fa-phone-alt icon"></i>
+            <span>(205) 484-9624</span>
+        </a>
+        <a href="#appointment" class="appointment-button">Get appointment now</a>
+    </div>
+</header>
 
+<nav class="nav-header">
+    <div class="logo-container">
+        <img src="/photo/logoClean.png" alt="Norben Logo" class="nav-logo">
+    </div>
 
-    <nav class="nav-header">
-        <div class="logo-container">
-            <img src="/photo/logoClean.png" alt="Non-Fit Logo" class="nav-logo">
-        </div>
+    <div class="burger-menu" id="burger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-links-wrapper" id="mobileNav">
         <div class="nav-links-container">
             <div class="nav-container">
                 <a href="#" class="nav-link">Home</a>
@@ -39,20 +42,30 @@
                 <a href="#" class="nav-link">Contact us</a>
             </div>
         </div>
-    </nav>
+    </div>
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileNav = document.getElementById("mobileNav");
+
+        burger.addEventListener("click", () => {
+            mobileNav.classList.toggle("active");
+            burger.classList.toggle("open");
+        });
+    </script>
+</nav>
 
 
-    <section class="promo-header">
-        <div class="promo-background"></div>
-        <div class="promo-content">
-            <a class="promo-title">GET CLEANED</a>
-            <a class="promo-subtitle">with QC Commercial Cleaners</a>
-            <a href="#appointment" class="promo-button">Get appointment now</a>
-        </div>
-    </section>
+<section class="promo-header">
+    <div class="promo-content">
+        <a class="promo-title">GET CLEANED</a>
+        <a class="promo-subtitle">with CC Commercial Cleaners</a>
+        <a href="#appointment" class="promo-button">Get appointment now</a>
+    </div>
+</section>
 
 
-    <section class="services-section">
+<section class="services-section">
+    <div class="services-scroll-container">
         <div class="services-grid">
             <div class="service-item">
                 <div class="service-circle">
@@ -87,47 +100,46 @@
                 <h3 class="service-name">Disinfection Services</h3>
             </div>
         </div>
-    </section>   
+    </div>
+    </section>
 
 
     <section class="about-section">
         <div class="main-container">
-            <div class="section-header">
-                <h1>Know Something About Our Company</h1>
-            </div>
-            <div class="mission-header">
-                <h2>PROFESSIONAL HOUSE CLEANING</h2>
-                <div class="divider"></div>
-                <div class="feature-tag">FREE ESTIMATE</div>
-            </div>
             <div class="content-block">
-                <div class="text-block">
-                    <p>There's no greater feeling than coming back to work to an empty trash can after stuffing your receptacle with the previous day's food, paper, and other refuse. Tasks like trash removal and other janitorial services add up and leave your business in a radiant condition.</p>
-                    <p>With more than 30 years of experience, we have ensured customer satisfaction by taking to heart every customer's feedback. We strive to improve the way cleaning is done in Birmingham, Alabama. Make CCC your first choice for commercial cleaning.</p>
-                </div>
-     <div class="mission-content">
-                            <h3>Mission Statement</h3>
-                            <p>The mission of Classic Commercial Cleaning is to give our clients outstanding customer service and quality services while remaining affordable.</p>
-                        </div>
+
                 <div class="side-block">
                     <div class="image-block">
-                        <img src="/photo/Team.png" alt="Our Company" />
-                    </div>
-    
-                    <div class="mission-block">
+                        <img src="/photo/Team.png" alt="Our Company">
+                        <div class="mission-header">
+                            <h2>PROFESSIONAL HOUSE CLEANING</h2>
+                            <div class="divider"></div>
+                            <div class="feature-tag">FREE ESTIMATE</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="action-block">
-                <div class="divider-long"></div>
-                <a href="#" class="read-more-link">Read More</a>
+
+                <div class="text-block">
+                    <h1 class="section-title">Know Something About Our Company</h1>
+                    <p>There's no greater feeling than coming back to work to an empty trash can after stuffing your receptacle with the previous day's food, paper, and other refuse. Tasks like trash removal and other janitorial services add up and leave your business in a radiant condition. With more than 30 years of experience, we have ensured customer satisfaction by taking to heart every customer's feedback. We strive to improve the way cleaning is done in Birmingham, Alabama. Make CCC your first choice for commercial cleaning.</p>
+
+                    <div class="mission-content">
+                        <h3>Mission Statement</h3>
+                        <p>he mission of Classic Commercial Cleaning is to give our clients outstanding customer service and quality services while remaining affordable.</p>
+                    </div>
+
+                    <div class="action-block">
+                        <div class="divider-long"></div>
+                        <a href="#" class="read-more-link">Read More</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
 
-    
+
     <section class="cleaning-services-section">
         
         <div class="main-container">
@@ -234,63 +246,53 @@
           <img src="/photo/Pshyk.png" alt="Cleaning team" />
         </div>
       </section>
-      
-
-      <section class="contact-left">
-        <div class="contact-left__content">
-          <h2 class="contact-left__title">Contact</h2>
-          <p class="contact-left__subtitle">
-            Thank you for your interest. We look forward to hearing from you soon.
-          </p>
-      
-          <div class="contact-left__info">
-            <div class="contact-left__item">
-              <div class="contact-left__icon"><i class="bi bi-clock-fill"></i></div>
-              <div>
-                Hours of Operation<br><strong>Mon-Fri: 9AM - 5PM</strong> 
-              </div>
+<section class="contact-section">
+    <div class="contact-image">
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>Thank you for your interest. We look forward to hearing from you soon.</p>
+            <div class="contact-item">
+                <i class="bi bi-clock-fill"></i>
+                <div>
+                    <span>Hours Of Operation</span><br>
+                    <strong>Mon–Fri: 9AM - 5PM</strong>
+                </div>
             </div>
-      
-            <div class="contact-left__item">
-              <div class="contact-left__icon"><i class="bi bi-telephone-fill"></i>
-              </div>
-              <div>
-                24/7 Emergency Service<br><strong>(205) 484-9624</strong> 
-              </div>
+            <div class="contact-item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                    <span>24/7 Emergency Service</span><br>
+                    <strong>(205) 484-9624</strong>
+                </div>
             </div>
-      
-            <div class="contact-left__item">
-              <div class="contact-left__icon"><i class="bi bi-geo-alt-fill"></i>
-              </div>
-              <div>
-                Service Area<br> <strong>Birmingham, AL</strong>
-              </div>
+            <div class="contact-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                    <span>Service Area</span><br>
+                    <strong>Birmingham, AL</strong>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      
-      <section class="contact-right">
-        <form class="contact-right__form">
-          <div class="contact-right__row">
-            <input type="text" placeholder="First name">
-            <input type="text" placeholder="Last name">
-          </div>
-          <div class="contact-right__row">
-            <input type="email" placeholder="Email address">
-            <input type="tel" placeholder="Phone no">
-          </div>
-          <textarea placeholder="Message..."></textarea>
-          <button type="submit" class="contact-right__button">Send Message</button>
+    </div>
+
+    <div class="contact-form">
+
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+            </div>
+            <div class="form-row">
+                <input type="email" placeholder="Email address">
+                <input type="tel" placeholder="Phone no">
+            </div>
+            <textarea placeholder="Message..."></textarea>
+            <button type="submit">Send Message</button>
         </form>
-      </section>
-      
-      
+    </div>
+</section>
 
-
-
-    
-    <footer class="main-footer">
+<footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column">
                 <h3 class="footer-title">Links</h3>

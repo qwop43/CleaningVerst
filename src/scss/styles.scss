@@ -8,3 +8,54 @@
 @use 'quote';
 @use 'info';
 @use 'footer';
+@media (max-width: 768px) {
+  .info-banner {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info-banner__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .info-banner__title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .info-banner__description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-banner__contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .quote-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .quote-steps {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .step-item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .line-with-arrow,
+  .line-with-arrow2 {
+    display: none;
+  }
+}

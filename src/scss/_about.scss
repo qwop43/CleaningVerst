@@ -1,381 +1,141 @@
+.about-section {
+  padding: 60px 20px;
+  background: #fff;
 
-
-  
   .main-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
   }
-  
-  .section-header {
-    h1 {
-        position: absolute;
-        width: 512.78px;
-        height: 106px;
-        top: 1627.23px;
-        left: 1079.44px;
-        font-family: Rubik;
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 100%;
-        letter-spacing: 0;
-        color: #2F4672;
-    }
-  }
-  
+
   .content-block {
     display: flex;
-    gap: 50px;
-    margin-bottom: 40px;
+    align-items: center; // центруємо по вертикалі
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
-  
+
+  .side-block {
+    flex: 1 1 45%;
+    position: relative;
+
+    .image-block {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+      }
+
+      .mission-header {
+        position: relative;
+        bottom: -40px;
+        background: #f4a940;
+        padding: 30px;
+        color: #fff;
+        max-width: 400px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        text-align: center;
+
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .divider {
+          height: 2px;
+          width: 60px;
+          background: #fff;
+          margin: 0 auto 10px;
+        }
+
+        .feature-tag {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          position: static;
+          transform: none;
+          margin-top: 20px;
+          width: 80%;
+          max-width: none;
+        }
+      }
+    }
+  }
+
   .text-block {
-    position: absolute;
-    width: 512.78px;
-    height: 240px;
-    top: 1762.08px;
-    left: 1079.44px;
-  
-    p {
-        font-family: Rubik;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0;
-        color: #828282;
-    }
-  }
-  
-  .mission-block {
-    position: absolute;
-    width: 363.94px;
-    height: 268px;
-    top: 1976.34px;
-    left: 650.39px;
-    flex: 1;
-    background-color: #F59E3E;
-  }
-  
-  .mission-header {
-    h2 {
-        position: absolute;
-        z-index: 10;
-        width: 304.48px;
-        height: 72px;
-        top: 2016.63px;
-        left: 680.12px;
-        font-family: Rubik;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 100%;
-        letter-spacing: 0;
-        text-transform: uppercase;
-        color: #ffffff;
-    }
-  }
-  
-  .divider {
-    position: absolute;
-    z-index: 10;
-    width: 71.85px;
-    top: 2138.33px;
-    left: 680.12px;
-    height: 4px;
-    background-color: #ffffff;
-    margin-bottom: 15px;
-  }
-  
-  .feature-tag {
-    position: absolute;
-    width: 296px;
-    height: 46px;
-    top: 2154.33px;
-    left: 680.12px;
-    z-index: 10;
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 39px;
-    line-height: 100%;
-    letter-spacing: 0;
-    color: #ffffff;
-    padding: 5px 15px;
-    margin-bottom: 20px;
-  }
-  
-  .mission-content {
-    h3 {
-        position: absolute;
-        width: 190px;
-        height: 24px;
-        top: 2030.92px;
-        left: 1079.44px;
-        color: #333333;
-        font-family: Rubik;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0;
-        margin-bottom: 10px;
-    }
-  
-    p {
-        position: absolute;
-        width: 512.78px;
-        height: 72px;
-        top: 2069.34px;
-        left: 1079.44px;
-        font-family: Rubik;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0;
-        color: #828282;
-    }
-  }
-  
-  .action-block {
-    text-align: center;
-  }
-  
-  .read-more-link {
-    position: absolute;
-    width: 195px;
-    height: 60px;
-    top: 2176.34px;
-    left: 1077.77px;
-    border-radius: 30px;
-    background-color: #F69400;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-    letter-spacing: 1px;
+    flex: 1 1 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .image-block {
-    img {
-        position: absolute;
-        width: 623px;
-        height: 569.11px;
-        top: 1619.23px;
-        left: 327.77px;
-        border-radius: 10px;
-    }
-  }
 
-  @media (max-width: 1200px) {
-    .section-header h1 {
-      left: 430px;
-      top: 910px;
-      font-size: 30px;
-      width: 330px;
+    .section-title {
+      font-family: 'Rubik', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2a2a72;
+      margin-bottom: 20px;
     }
-    
-    .text-block {
-      left: 430px;
-      top: 980px;
-      width: 310px;
+
+    p {
+      margin-bottom: 16px;
+      color: #444;
+      line-height: 1.6;
     }
-    .text-block p {
-      font-size: 15px;
+
+    .mission-content {
+      margin-top: 20px;
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #555;
+      }
     }
-    
-    .mission-block {
-      left: 175px;
-      top: 1170px;
-      width: 250px;
-      height: 200px;
-    }
-    
-    .mission-header h2 {
-      left: 190px;
-      top: 1260px;
-      font-size: 22px;
-      width: 250px;
-    }
-    
-    .divider {
-      left: 195px;
-      top: 1250px;
-    }
-    
-    .feature-tag {
-      left: 175px;
-      top: 1200px;
-      font-size: 28px;
-      width: 260px;
-    }
-    
-    .mission-content h3 {
-      left: 430px;
-      top: 1195px;
-      font-size: 15px;
-    }
-    
-    .mission-content p {
-      left: 430px;
-      top: 1210px;
-      width: 330px;
-      font-size: 15px;
-    }
-    
-    .read-more-link {
-      left: 430px;
-      top: 1295px;
-    }
-    
-    .image-block img {
-      left: 5px;
-      top: 940px;
-      width: 400px;
-      height: 400px;
+
+    .action-block {
+      margin-top: 30px;
+
+      .divider-long {
+        height: 2px;
+        width: 100px;
+        background: #f4a940;
+        margin: 0 auto 20px;
+
+        @media (min-width: 769px) {
+          margin-left: 0;
+        }
+      }
+
+      .read-more-link {
+        background: #f4a940;
+        padding: 12px 24px;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #e69325;
+        }
+      }
     }
   }
-
-
-  @media (max-width: 768px) {
-    .section-header h1 {
-      left: 270px;
-      top: 1150px;
-      font-size: 22px;
-      width: 230px;
-    }
-    
-    .text-block {
-      left: 271px;
-      top: 1200px;
-      width: 270px;
-    }
-    .text-block p {
-      font-size: 10px;
-    }
-    
-    .mission-block {
-      left: 120px;
-      top: 1315px;
-      width: 150px;
-      height: 120px;
-    }
-    
-    .mission-header h2 {
-      left: 130px;
-      top: 1365px;
-      font-size: 15px;
-      width: 170px;
-    }
-    
-    .divider {
-      left: 130px;
-      top: 1360px;
-      height: 2px;
-    }
-    
-    .feature-tag {
-      left: 115px;
-      top: 1330px;
-      font-size: 16px;
-      width: 260px;
-    }
-    
-    .mission-content h3 {
-      left: 270px;
-      top: 1305px;
-      font-size: 15px;
-    }
-    
-    .mission-content p {
-      left: 272px;
-      top: 1330px;
-      width: 275px;
-      font-size: 10px;
-    }
-    
-    .read-more-link {
-      left: 275px;
-      top: 1375px;
-    }
-    
-    .image-block img {
-      left: 5px;
-      top: 1170px;
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  
-  @media (max-width: 480px) {
-   
-    .section-header h1 {
-      left: 226px;
-      top: 1550px;
-      font-size: 18px;
-      width: 200px;
-    }
-    
-    .text-block {
-      left: 226px;
-      top: 1600px;
-      width: 200px;
-    }
-    .text-block p {
-      font-size: 8px;
-    }
-    
-    .mission-block {
-      left: 120px;
-      top: 1715px;
-      width: 100px;
-      height: 80px;
-    }
-    
-    .mission-header h2 {
-      left: 130px;
-      top: 1765px;
-      font-size: 8px;
-      width: 80px;
-    }
-    
-    .divider {
-      left: 130px;
-      top: 1760px;
-      height: 2px;
-    }
-    
-    .feature-tag {
-      left: 115px;
-      top: 1730px;
-      font-size: 11px;
-      width: 120px;
-    }
-    
-    .mission-content h3 {
-      left: 226px;
-      top: 1695px;
-      font-size: 15px;
-    }
-    
-    .mission-content p {
-      left: 226px;
-      top: 1715px;
-      width: 210px;
-      font-size: 10px;
-    }
-    
-    .read-more-link {
-      left: 225px;
-      top: 1769px;
-    }
-    
-    .image-block img {
-      left: 5px;
-      top: 1590px;
-      width: 200px;
-      height: 200px;
-    }
-  }
+}

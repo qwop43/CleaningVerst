@@ -7,15 +7,14 @@
   align-items: center;
   position: relative;
   z-index: 10;
-  padding: 0 20px;
-  gap: 40px;
+  gap: 20px;
   justify-content: center; /* Центруємо всі елементи */
   flex-wrap: nowrap;
 }
 
 .nav-logo {
-  height: 118px;
-  width: 194px;
+  height: 30%;
+  width: 30%;
   /* position: absolute; left/top прибрали */
   flex-shrink: 0; /* Щоб не стиснувся */
 }
@@ -60,57 +59,66 @@
   font-weight: 700;
   color: #F69400;
 }
+.burger-menu {
+  display: flex;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #243665;
+}
 
-/* --- Адаптивність --- */
+.nav-links-wrapper {
+  display: flex;
+}
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #243665;
+}
 
-@media (max-width: 1024px) {
-  .nav-logo {
-    height: 90px;
-    width: 150px;
-  }
-
-  .nav-link {
-    font-size: 18px;
-  }
-
-  .nav-links-container {
-    gap: 20px;
-  }
+.nav-links-wrapper {
+  display: flex;
 }
 
 @media (max-width: 768px) {
-  .nav-header {
-    height: auto; /* щоб підлаштовувався під вміст */
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 20px;
-    gap: 20px;
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
   }
 
-  .nav-logo {
-    height: 70px;
-    width: 120px;
-    margin-bottom: 10px;
-  }
-
-  .nav-links-container {
+  .nav-links-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
     width: 100%;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 1rem 0;
+    z-index: 1000;
+
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 1.5rem;
+
+      .nav-link {
+        padding: 0.75rem 0;
+        width: 100%;
+      }
+    }
   }
 
-  .nav-link {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-links-container {
-    gap: 10px;
+  .nav-links-wrapper.active {
+    display: flex;
   }
 
-  .nav-link {
-    font-size: 14px;
+  .nav-header {
+    position: relative;
   }
 }

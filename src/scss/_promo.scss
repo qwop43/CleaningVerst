@@ -1,143 +1,52 @@
 .promo-header {
   position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding-bottom: 42.54%; /* співвідношення висоти до ширини (пропорції блоку) */
-  overflow: hidden;
-  text-align: center;
-  color: white;
-}
-
-.promo-background {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('/photo/Clean.png');
-  background-size: cover;
-  background-position: center;
-  transform: scaleX(-1);
-  z-index: -1;
-}
-
-/* Основний контент центрований у блокі */
-.promo-content {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 760px;
-
+  height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-}
-
-.promo-title {
-  font-family: Rubik, sans-serif;
-  font-weight: 700;
-  font-size: 5vw;
-  line-height: 1;
-  color: #fff;
-  margin: 0 0 10px 0;
-  /* прибрано абсолютне позиціювання, тепер природне розташування у флексі */
-}
-
-.promo-subtitle {
-  font-family: Rubik, sans-serif;
-  font-weight: 500;
-  font-size: 1.5625vw;
-  line-height: 1.2;
-  color: #fff;
-  margin: 0 0 20px 0;
-  max-width: 426px;
   text-align: center;
-}
+  background: url('/photo/Clean.png') no-repeat center center / cover;
 
-.promo-button {
-  width: 100%;
-  max-width: 303px;
-  height: 7.34vh;
-  background-color: #F69400;
-  color: white;
-  font-family: Rubik, sans-serif;
-  font-weight: 700;
-  font-size: 1.04vw;
-  line-height: 1;
-  border-radius: 30px;
-  text-decoration: none;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .promo-content {
+    z-index: 2;
+    color: #fff;
+    padding: 0 20px;
 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  user-select: none;
-  border: none;
-}
+    .promo-title {
+      font-size: 3rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+    }
 
-.promo-button:hover {
-  background-color: #e08500;
-}
+    .promo-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      display: block;
+    }
 
-/* --- Адаптивність --- */
+    .promo-button {
+      background: #f4a940;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
 
-@media (max-width: 1024px) {
-  .promo-header {
-    padding-bottom: 50%;
+      &:hover {
+        background: #e69325;
+      }
+    }
   }
-  .promo-title {
-    font-size: 7vw;
-  }
-  .promo-subtitle {
-    font-size: 2.5vw;
-  }
-  .promo-button {
-    font-size: 2vw;
-    height: 6vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .promo-header {
-    padding-bottom: 60%;
-  }
-  .promo-title {
-    font-size: 8vw;
-  }
-  .promo-subtitle {
-    font-size: 3vw;
-  }
-  .promo-button {
-    font-size: 2.5vw;
-    height: 5vh;
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .promo-header {
-    padding-bottom: 80%;
-  }
-  .promo-title {
-    position: relative;
-    top:-40px;
-    font-size: 10vw;
-  }
-  .promo-subtitle {
-    position: relative;
-    top:-40px;
-    font-size: 4vw;
-  }
-  .promo-button {
-     position: relative;
-    top:-50px;
-    font-size: 3.5vw;
-    height: 40px;
-    max-width: 200px;
-    border-radius: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 }
