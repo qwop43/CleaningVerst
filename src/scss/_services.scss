@@ -12,6 +12,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  flex-wrap: nowrap; /* за замовчуванням рядок */
 }
 
 .service-item {
@@ -32,10 +33,11 @@
   align-items: center;
   border: 5px solid #F2F2F2;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .service-circle:hover {
-  border: 5px solid #F69400;
+  border-color: #F69400;
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
@@ -56,36 +58,38 @@
   transition: transform 0.5s ease;
 }
 
+.service-circle:hover .service-photo {
+  transform: scale(1.05);
+}
+
 .service-name {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-weight: 500;
   font-size: 22px;
   color: #333;
   margin: 15px 0 0;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
 }
+
+/* --- Адаптивність --- */
 
 @media (max-width: 1024px) {
   .services-grid {
     gap: 40px;
   }
-  
   .service-item {
     width: 220px;
   }
-  
   .service-circle {
     width: 140px;
     height: 140px;
   }
-  
   .service-photo-wrapper {
     width: 130px;
     height: 130px;
   }
-  
   .service-name {
     font-size: 18px;
   }
@@ -95,62 +99,51 @@
   .services-section {
     padding: 60px 0;
   }
-  
   .services-grid {
     gap: 30px;
     flex-wrap: wrap;
   }
-  
   .service-item {
     width: calc(50% - 30px);
     max-width: 220px;
     margin-bottom: 30px;
   }
-  
   .service-circle {
     width: 160px;
     height: 160px;
     margin-bottom: 20px;
   }
-  
   .service-photo-wrapper {
     width: 140px;
     height: 140px;
   }
-  
   .service-name {
     font-size: 18px;
   }
 }
 
-
 @media (max-width: 480px) {
   .services-section {
     padding: 50px 15px;
   }
-  
   .services-grid {
     gap: 20px;
     flex-direction: column;
     align-items: center;
   }
-  
   .service-item {
     width: 100%;
     max-width: 220px;
     margin-bottom: 25px;
   }
-  
   .service-circle {
     width: 140px;
     height: 140px;
   }
-  
   .service-photo-wrapper {
     width: 120px;
     height: 120px;
   }
-  
   .service-name {
     font-size: 16px;
   }
