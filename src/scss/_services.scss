@@ -124,7 +124,9 @@
 
 @media (max-width: 480px) {
   .services-section {
-    padding: 50px 15px;
+    position: relative;
+    top: -50px;
+    padding: 35px 15px;
   }
   .services-grid {
     gap: 20px;

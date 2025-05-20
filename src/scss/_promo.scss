@@ -123,12 +123,18 @@
     padding-bottom: 80%;
   }
   .promo-title {
+    position: relative;
+    top:-40px;
     font-size: 10vw;
   }
   .promo-subtitle {
+    position: relative;
+    top:-40px;
     font-size: 4vw;
   }
   .promo-button {
+     position: relative;
+    top:-50px;
     font-size: 3.5vw;
     height: 40px;
     max-width: 200px;
