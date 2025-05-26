@@ -28,7 +28,7 @@
 }
 .main-header .business-hours i,
 .main-header .phone-number i {
-  color: #f4a940;
+  color: #ffffff;
   font-size: 1rem;
 }
 .main-header .business-hours span,
@@ -36,7 +36,7 @@
   font-weight: 500;
 }
 .main-header .appointment-button {
-  background-color: #f4a940;
+  background-color: #F69400;
   color: #fff;
   padding: 8px 16px;
   border-radius: 30px;
@@ -199,7 +199,7 @@
   display: block;
 }
 .promo-header .promo-content .promo-button {
-  background: #f4a940;
+  background: #F69400;
   color: #fff;
   padding: 14px 28px;
   border-radius: 30px;
@@ -236,7 +236,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  flex-wrap: nowrap; /* за замовчуванням рядок */
+  flex-wrap: nowrap;
 }
 
 .service-item {
@@ -423,7 +423,7 @@
   .about-section .side-block .image-block .mission-header {
     position: static;
     transform: none;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 80%;
     max-width: none;
   }
@@ -438,7 +438,7 @@
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #2a2a72;
+  color: #2F4672;
   margin-bottom: 20px;
 }
 .about-section .text-block p {
@@ -471,7 +471,7 @@
   }
 }
 .about-section .text-block .action-block .read-more-link {
-  background: #f4a940;
+  background: #F69400;
   padding: 22px 44px;
   border-radius: 30px;
   color: #fff;
@@ -538,7 +538,7 @@
   font-weight: 600;
   margin: 20px;
   margin-bottom: 10px;
-  color: #2a2a72;
+  color: #333333;
   font-family: "Rubik", sans-serif;
 }
 .cleaning-services-section .cleaning-service-card p {
@@ -582,7 +582,7 @@
 .contact-section .contact-image::before {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   inset: 0;
 }
 .contact-section .contact-image .contact-info {
@@ -650,7 +650,7 @@
 .contact-section .contact-form form button {
   align-self: flex-start;
   padding: 0.75rem 2rem;
-  background-color: #f4a622;
+  background-color: #F69400;
   color: white;
   border: none;
   border-radius: 2rem;
@@ -668,7 +668,7 @@
   }
   .contact-section .contact-image,
   .contact-section .contact-form {
-    width: 80%;
+    width: 100%;
     min-height: auto;
   }
   .contact-section .contact-image {
@@ -879,7 +879,7 @@
 }
 
 .main-footer {
-  background-color: #243665;
+  background-color: #3F5D97;
   color: #fff;
 }
 .main-footer .footer-container {
@@ -925,7 +925,7 @@
   text-align: center;
   padding: 1.5rem 0;
   font-size: 0.875rem;
-  background-color: #1c2a4d;
+  background-color: #3F5D97;
 }
 @media (max-width: 768px) {
   .main-footer .footer-container {

@@ -9,7 +9,7 @@
 
   .content-block {
     display: flex;
-    align-items: center; // центруємо по вертикалі
+    align-items: center;
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@
         @media (max-width: 768px) {
           position: static;
           transform: none;
-          margin-top: 20px;
+          margin-top: 50px;
           width: 80%;
           max-width: none;
         }
@@ -87,7 +87,7 @@
       font-family: 'Rubik', sans-serif;
       font-size: 2rem;
       font-weight: 700;
-      color: #2a2a72;
+      color: #2F4672;
       margin-bottom: 20px;
     }
 
@@ -125,7 +125,7 @@
       }
 
       .read-more-link {
-        background: #f4a940;
+        background: #F69400;
         padding: 22px 44px;
         border-radius: 30px;
         color: #fff;

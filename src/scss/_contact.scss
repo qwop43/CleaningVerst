@@ -15,7 +15,7 @@
     &::before {
       content: "";
       position: absolute;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       inset: 0;
     }
 
@@ -94,7 +94,7 @@
       button {
         align-self: flex-start;
         padding: 0.75rem 2rem;
-        background-color: #f4a622;
+        background-color: #F69400;
         color: white;
         border: none;
         border-radius: 2rem;
@@ -111,13 +111,12 @@
     }
   }
 
-  // 📱 Мобільна адаптація
   @media (max-width: 768px) {
     flex-direction: column;
 
     .contact-image,
     .contact-form {
-      width: 80%;
+      width: 100%;
       min-height: auto;
     }
 
